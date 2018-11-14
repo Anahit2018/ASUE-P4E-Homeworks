@@ -1,7 +1,7 @@
 list_of_nums = list(map(int, input("Enter integers seperated by spaces: ").split()))
 
 def find_max(list_of_nums):
-    maximum=0
+    maximum=-(float('inf')) #not 0, as doesnt work for ex. -9 -8 -1
     for number in list_of_nums:
         if number>maximum:
             maximum=number
